@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arttoys</title>
+  <meta name="description" content="Discover unique art toys, collectibles and figures. Your one-stop shop for exclusive merchandise.">
+
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="lib/style.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="sticky-top bg-white shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-light container py-2">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <div class="profile-placeholder mx-auto">
+            <img src="assets/arttoys_logo.png"  width="150" height="100" alt="arttoys_logo">
+        </div>
+        <div class="d-flex flex-column">
+          <span class="small text-muted" data-i18n="tagline"></span>
+        </div>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-3 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#products" data-i18n="nav.products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-i18n="nav.about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a>
+          </li>
+          <!-- Language Switcher -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center gap-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe"></i>
+              <span id="current-lang">EN</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-lang="en">
+                  <span class="fi fi-gb"></span> English
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="#" data-lang="vi">
+                  <span class="fi fi-vn"></span> Tiếng Việt
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-white py-5">
+    <div class="container py-4 py-md-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-3" data-i18n="hero.title">Welcome to Arttoys</h1>
+          <p class="lead mb-4 opacity-75" data-i18n="hero.subtitle">
+            Collecting is our passion. Discover unique art toys and collectibles.
+          </p>
+          <a href="#products" class="btn btn-light btn-lg rounded-pill px-4">
+            <span data-i18n="hero.cta">Browse Products</span>
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Products Section -->
+  <section id="products" class="py-5">
+    <div class="container py-4">
+      <div class="mb-5">
+        <h2 class="display-6 fw-bold text-dark" data-i18n="products.title">Featured Products</h2>
+        <p class="text-muted fs-5" data-i18n="products.subtitle">Check out our latest collectibles</p>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="row g-4">
+        <h3 data-i18n="products.series.tcoy">Twinkle Twinkle Crush On You Series</h3>
+
+        <!-- Product Card 1 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="placeholder-img">
+              <img src="assets/600x400.svg" class="card-img-top" alt="Nerdy Cupid">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-1" data-i18n="products.tcoy.nerdy">Nerdy Cupid</h5>
+              <p class="card-text text-muted small mb-2" data-i18n="products.series.tcoy">Twinkle Twinkle Crush On You Series</p>
+              <p class="fw-bold text-primary mb-0">XX.XX VND</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="placeholder-img">
+              <img src="assets/tcoy_wyc.webp" class="card-img-top" alt="When You Call">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-1" data-i18n="products.tcoy.wyc">When You Call</h5>
+              <p class="card-text text-muted small mb-2" data-i18n="products.series.tcoy">Twinkle Twinkle Crush On You Series</p>
+              <p class="fw-bold text-primary mb-0">XX.XX VND</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="placeholder-img">
+              <img src="assets/tcoy_ihy.webp" class="card-img-top" alt="I Hear You">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-1" data-i18n="products.tcoy.ihy">I Hear You</h5>
+              <p class="card-text text-muted small mb-2" data-i18n="products.series.tcoy">Twinkle Twinkle Crush On You Series</p>
+              <p class="fw-bold text-primary mb-0">XX.XX VND</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="placeholder-img">
+              <img src="assets/tcoy_blushing.webp" class="card-img-top" alt="Blushing Moment">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-1" data-i18n="products.tcoy.blushing">Blushing Moment</h5>
+              <p class="card-text text-muted small mb-2" data-i18n="products.series.tcoy">Twinkle Twinkle Crush On You Series</p>
+              <p class="fw-bold text-primary mb-0">XX.XX VND</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="placeholder-img">
+              <img src="assets/tcoy_candy.webp" class="card-img-top" alt="Candy Words">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-1" data-i18n="products.tcoy.candy">Candy Words</h5>
+              <p class="card-text text-muted small mb-2" data-i18n="products.series.tcoy">Twinkle Twinkle Crush On You Series</p>
+              <p class="fw-bold text-primary mb-0">XX.XX VND</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100 shadow-sm">
+            <div class="placeholder-img">
+              <img src="assets/tcoy_sweet.webp" class="card-img-top" alt="Sweet Memories">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-semibold mb-1" data-i18n="products.tcoy.sweet">Sweet Memories</h5>
+              <p class="card-text text-muted small mb-2" data-i18n="products.series.tcoy">Twinkle Twinkle Crush On You Series</p>
+              <p class="fw-bold text-primary mb-0">XX.XX VND</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-primary-light">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="display-6 fw-bold text-dark mb-4" data-i18n="about.title">About Us</h2>
+          <p class="text-muted fs-5 mb-4" data-i18n="about.story">
+            [Arttoys story]
+          </p>
+          <div class="profile-placeholder mx-auto">
+            <img src="assets/arttoys_logo.png"  width="150" height="100" alt="arttoys_logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-dark" data-i18n="contact.title">Get in Touch</h2>
+            <p class="text-muted fs-5" data-i18n="contact.subtitle">Have questions? We'd love to hear from you.</p>
+          </div>
+
+          <div class="card contact-card shadow-lg border-0">
+            <div class="card-body p-4 p-md-5">
+              <div class="row g-4">
+                <!-- Contact Info -->
+                <div class="col-md-6">
+                  <div class="d-flex flex-column gap-4">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="contact-icon">
+                        <i class="bi bi-telephone"></i>
+                      </div>
+                      <div>
+                        <h6 class="fw-semibold mb-1" data-i18n="contact.phone">Phone</h6>
+                        <p class="text-muted mb-0">+84 123 456 789</p>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="contact-icon">
+                        <i class="bi bi-geo-alt"></i>
+                      </div>
+                      <div>
+                        <h6 class="fw-semibold mb-1" data-i18n="contact.location">Location</h6>
+                        <p class="text-muted mb-0" data-i18n="contact.address">HCM, Vietnam</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-md-6">
+                  <h6 class="fw-semibold mb-3" data-i18n="contact.followUs">Follow Us</h6>
+                  <div class="d-flex flex-wrap gap-2">
+                    <a href="" class="social-icon" aria-label="Zalo">
+                      <img src="assets/icons8-zalo-100.png" alt="Zalo" width="24" height="24">
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=61586848787482" class="social-icon" aria-label="Facebook">
+                      <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="TikTok">
+                      <i class="bi bi-tiktok"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <!-- Brand -->
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="logo-circle logo-circle-sm">AT</div>
+          </div>
+          <p class="text-muted" data-i18n="footer.description">
+            Your trusted source for art toys and collectibles.
+          </p>
+        </div>
+
+        <!-- Empty Col -->
+        <div class="col-md-4"></div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4">
+          <h6 class="fw-semibold mb-3" data-i18n="footer.quickLinks">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#products" class="footer-link" data-i18n="nav.products">Products</a></li>
+            <li class="mb-2"><a href="#about" class="footer-link" data-i18n="footer.aboutUs">About Us</a></li>
+            <li class="mb-2"><a href="#contact" class="footer-link" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-secondary">
+
+      <div class="text-center text-muted">
+        <p class="mb-0" data-i18n="footer.copyright">&copy; 2026 Arttoys. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Language Switcher JS -->
+  <script src="lib/i18n.js"></script>
+  <!-- Coverflow Carousel JS -->
+  <script src="lib/coverflow.js"></script>
+  <!-- TikTok Embed Script -->
+  <script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+</html>
